@@ -5,7 +5,7 @@ body{
   min-height: 50px;
 }
 
-/*! header */
+  /*! header */
 
 .header{
 padding: 92px 24px 96px 24px;
@@ -102,8 +102,8 @@ background: #fff; /*#fff*/
 
 /* /address */
 
-/*! /header */
-/*! cover */
+  /*! /header */
+  /*! cover */
 
 .cover{
   display: grid;
@@ -347,4 +347,69 @@ color: #000000;
 }
 
   /*! /about */
+  /*! footer */
+
+.footer{
+  min-height:100px;
+  padding: 144px 50px 125px 40px;
+  display: grid;
+  grid-template-columns: 242px 1fr 242px;
+  background-color:#fff ;
+}
+
+/*address*/
+/*навигация*/
+
+
+.footer__menu{
+
+    justify-self: center;
+    align-self: center;
+}
+
+.footer__menu-list{
+text-align: center;
+}
+
+.footer__menu-list-item{
+  list-style: none; 
+}
+
+.footer__menu-link{
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;
+}
+
+/* /навигация */
+/* соц сети*/
+
+.footer__social-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-list-item{
+  list-style: none; 
+}
+
+.footer__social-link{}
+
+.footer__social-icon{
+  height: 48px;
+  width: 48px;
+}
+
+/* /соцсети */
+  /*! /footer */
+
+
+
 
