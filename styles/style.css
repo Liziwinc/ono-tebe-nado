@@ -83,7 +83,6 @@ body {
   font-style: normal;
   text-align: center;
   text-decoration: underline;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -98,7 +97,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Raleway";
-  font-style: normal;
 }
 
 /* /address */
@@ -399,8 +397,8 @@ body {
   list-style: none;
 }
 
-.footer__social-link {
-}
+/*.footer__social-link {
+}*/
 
 .footer__social-icon {
   height: 48px;
