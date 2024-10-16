@@ -348,7 +348,7 @@ body {
 /*! footer */
 
 .footer {
-  padding: 144px 50px 125px 40px;
+  padding: 144px 50px 82px 40px;
   display: grid;
   grid-template-columns: 242px 1fr 242px;
   background-color: #fff;
