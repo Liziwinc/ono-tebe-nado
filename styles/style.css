@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-columns: 423px 350px auto;
   background: #fff;
+  max-height: 294px;
   /*#fff*/
 }
 
