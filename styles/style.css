@@ -2,7 +2,6 @@
 
 body {
   background: #f5f5f5;
-  min-height: 50px;
 }
 
 /*! header */
@@ -11,7 +10,6 @@ body {
   padding: 92px 24px 96px 24px;
   display: grid;
   grid-template-columns: 423px 350px auto;
-  grid-template-rows: 105px;
   background: #fff;
   /*#fff*/
 }
@@ -72,13 +70,12 @@ body {
 /* /logo */
 /* address */
 
-.header__address {
+.address {
   max-width: 237px;
-  max-height: 49px;
   padding: 5px 14px;
 }
 
-.address {
+.address-link {
   font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
   text-align: center;
@@ -97,6 +94,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Raleway", Arial, sans-serif;
+  text-align: start;
 }
 
 /* /address */
@@ -107,7 +105,7 @@ body {
 .cover {
   display: grid;
   background-image: url(../images/cover.jpg);
-  height: 757px;
+  min-height: 757px;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -117,8 +115,7 @@ body {
 .overlay {
   z-index: -1;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0; 
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -220,8 +217,10 @@ body {
 
 .lots__card-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 33px;
+  gap: 25px;
+  margin-left: 25px;
 }
 
 .lots__card-list-item {
@@ -234,31 +233,28 @@ body {
 
 .card {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 51px 40px 48px 40px;
   z-index: 0;
+  background-size: cover;
+  background-position: center center;
 }
+
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center center;
 }
 
 .card__title {
@@ -303,8 +299,8 @@ body {
   padding-top: 179px;
   display: grid;
   grid-template-columns: 385px 688px;
-  height: 774px;
   background: #fff;
+  padding-bottom: 35px;
 }
 
 .about__column {
@@ -343,13 +339,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 /*! /about */
 /*! footer */
 
 .footer {
-  min-height: 100px;
   padding: 144px 50px 125px 40px;
   display: grid;
   grid-template-columns: 242px 1fr 242px;
