@@ -11,8 +11,6 @@ body {
   display: grid;
   grid-template-columns: 423px 350px auto;
   background: #fff;
-  max-height: 294px;
-  /*#fff*/
 }
 
 /* nav */
@@ -39,10 +37,6 @@ body {
   list-style: none;
 }
 
-.header__link-active {
-  text-decoration: none;
-}
-
 .header__link {
   font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
@@ -51,6 +45,10 @@ body {
   line-height: 21px;
   letter-spacing: 0.01em;
   text-underline-offset: 2px;
+}
+
+.header__link-active {
+  text-decoration: none;
 }
 
 /* /nav */
